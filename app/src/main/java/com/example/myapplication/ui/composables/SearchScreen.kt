@@ -112,9 +112,19 @@ fun DetailsScreen(viewModel: MovieViewModel) {
                     .fillMaxWidth()
                     .height(400.dp))
         Spacer(modifier = androidx.compose.ui.Modifier.height(16.dp))
-        Text(text = detail.title, style = MaterialTheme.typography.h4)
-        Text(text = "Year: ${detail.year}", style = MaterialTheme.typography.body1)
-        Text(text = "Rated: ${detail.rated}", style = MaterialTheme.typography.body1)
+            Text(text = detail.title, style = MaterialTheme.typography.h4)
+            Text(text = "Year: ${detail.year}", style = MaterialTheme.typography.body1)
+            Text(text = "Rated: ${detail.rated}", style = MaterialTheme.typography.body1)
+            Text(text = "Released: ${detail.released}", style = MaterialTheme.typography.body1)
+            Text(text = "Runtime: ${detail.runtime}", style = MaterialTheme.typography.body1)
+            Text(text = "Genre: ${detail.genre}", style = MaterialTheme.typography.body1)
+            Text(text = "Director: ${detail.director}", style = MaterialTheme.typography.body1)
+            Text(text = "Writer: ${detail.writer}", style = MaterialTheme.typography.body1)
+            Text(text = "Actors: ${detail.actor}", style = MaterialTheme.typography.body1)
+            Text(text = "Plot: ${detail.plot}", style = MaterialTheme.typography.body1)
+            Text(text = "Language: ${detail.language}", style = MaterialTheme.typography.body1)
+            Text(text = "Country: ${detail.country}", style = MaterialTheme.typography.body1)
+            Text(text = "Awards: ${detail.awards}", style = MaterialTheme.typography.body1)
         }
     }
 }

@@ -6,6 +6,7 @@ data class Movie(
     @SerializedName("imdbID")val imdbId: String,
     @SerializedName("Title") val title: String,
     @SerializedName("Year") val year: String,
+    @SerializedName("Type") val type: String,
     @SerializedName("Poster") val poster: String
 )
 
@@ -24,7 +25,7 @@ data class MovieDetail(
     @SerializedName("Language") val language: String,
     @SerializedName("Country") val country: String,
     @SerializedName("Awards") val awards: String,
-    @SerializedName("Poster}") val poster: String,
+    @SerializedName("Poster") val poster: String,
     @SerializedName("Ratings") val ratings: List<Rating>,
     @SerializedName("Metascore") val metascore: String,
     @SerializedName("imdbRating") val imdbRating: String,
